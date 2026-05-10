@@ -1,0 +1,25 @@
+{
+  "name": "ringa-receptionist",
+  "version": "1.0.0",
+  "description": "Ringa — AI receptionist for Glow Salon. Voice via Vapi, WhatsApp via Twilio, brain via Claude.",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "nodemon src/index.js",
+    "setup:vapi": "node scripts/setup-vapi.js"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.24.3",
+    "axios": "^1.7.2",
+    "body-parser": "^1.20.2",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "twilio": "^5.2.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.4"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
